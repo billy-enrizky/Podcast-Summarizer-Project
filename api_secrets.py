@@ -1,0 +1,2 @@
+API_KEY_ASSEMBLYAI = 'api_key_1'
+API_KEY_LISTENNOTES = 'api_key_2'
