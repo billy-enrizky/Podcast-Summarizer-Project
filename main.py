@@ -2,6 +2,7 @@ import streamlit as st
 import glob, json
 from api_communication import save_transcript
 
+st.image('homepage.jpeg', width=600)
 st.title("Podcast Summarizer")
 json_files = glob.glob('*.json')
 
