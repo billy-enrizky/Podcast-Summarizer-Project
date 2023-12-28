@@ -1,63 +1,45 @@
 # Podcast Summarizer Project
 
-## Introduction
+## Overview
+This project is a Podcast Summarizer that utilizes two external APIs: AssemblyAI for transcription and ListenNotes for accessing podcast episode details. The project consists of three main files: `api_secrets.py`, `api_communication.py`, and `main.py`.
 
-Welcome to the Podcast Summarizer project! This project allows you to transcribe podcast episodes and generate summaries based on their content. It uses the AssemblyAI and Listen Notes APIs for transcription and episode information retrieval.
-
-## Project Structure
-
-### 1. api_secrets.py
-
-This file contains API keys required for communication with the AssemblyAI and Listen Notes APIs. Make sure to replace 'api_key_1' and 'api_key_2' with your actual API keys.
+### 1. `api_secrets.py`
+In this file, you need to provide the API keys for AssemblyAI and ListenNotes. Replace `'api_key_1'` and `'api_key_2'` with your actual API keys.
 
 ```python
 # api_secrets.py
 
-API_KEY_ASSEMBLYAI = 'your_assemblyai_api_key'
-API_KEY_LISTENNOTES = 'your_listennotes_api_key'
+API_KEY_ASSEMBLYAI = 'api_key_1'
+API_KEY_LISTENNOTES = 'api_key_2'
 ```
 
-### 2. api_communication.py
-
-This module handles communication with the AssemblyAI and Listen Notes APIs. It includes functions for retrieving podcast episode information, transcribing audio, and polling for transcription completion.
+### 2. `api_communication.py`
+This file handles the communication with the external APIs, transcribes podcast episodes, and saves the transcripts and chapter information. It utilizes the provided API keys from `api_secrets.py`.
 
 ```python
 # api_communication.py
 
-# ... (code for communication with APIs)
+# ... (Code for API communication and transcription)
 ```
 
-### 3. main.py
-
-This script provides a Streamlit web interface for the Podcast Summarizer. Users can input an episode ID and download the episode summary. The summary includes chapter-wise information.
+### 3. `main.py`
+The main script uses Streamlit to create a user interface for interacting with the Podcast Summarizer. Users can input an episode ID, click a button to download the episode summary, and view the summarized content along with chapter information.
 
 ```python
 # main.py
 
-# ... (code for Streamlit web interface)
+# ... (Code for Streamlit UI and interaction)
 ```
 
 ## Getting Started
+1. Open `api_secrets.py` and replace the placeholder API keys with your actual AssemblyAI and ListenNotes API keys.
 
-1. Clone this repository to your local machine.
-2. Replace the placeholder API keys in `api_secrets.py` with your actual API keys.
-3. Install the required dependencies by running `pip install -r requirements.txt`.
-4. Run `main.py` using `streamlit run main.py`.
-5. Access the web interface in your browser and input the episode ID to download the summary.
+2. Run `main.py` to launch the Streamlit app.
 
-## Usage
+3. Input the desired episode ID in the provided text input field.
 
-1. Input the episode ID in the provided text field on the web interface.
-2. Click the "Download Episode Summary" button to initiate the transcription and summary generation process.
-3. Once completed, the summary will be displayed on the web interface, organized by chapters.
+4. Click the "Download Episode Summary" button to initiate the transcription process.
 
-## Dependencies
+5. Once completed, the episode summary and chapter information will be displayed in the Streamlit app.
 
-- Streamlit
-- Requests
-
-## Disclaimer
-
-Make sure to comply with the terms of service of the AssemblyAI and Listen Notes APIs. Replace the placeholder API keys with your own, and use this tool responsibly.
-
-Happy podcast summarizing! 🎙️📝
+Feel free to explore and enhance the project according to your requirements!
