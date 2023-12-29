@@ -22,7 +22,7 @@ def get_episode_audio_url(episode_id):
     data = response.json()
     episode_title = data['title']
     thumbnail = data['thumbnail']
-    podcast_title= data['thumbnail']['title']
+    podcast_title = data['podcast']['title']
     audio_url = data['audio']
     return audio_url, podcast_title, thumbnail, episode_title
 
