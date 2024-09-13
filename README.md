@@ -2,6 +2,7 @@
 
 ## Overview
 This project is a Podcast Summarizer that utilizes two external APIs: AssemblyAI for transcription and ListenNotes for accessing podcast episode details. The project consists of three main files: `api_secrets.py`, `api_communication.py`, and `main.py`.
+You need to look for the episode ID from Listen Notes API. For example, the episode ID of https://www.listennotes.com/api/docs/?id=1ff9faf49d914df8b6fa450c5b00804a#get-api-v2-episodes-id is 1ff9faf49d914df8b6fa450c5b00804a
 
 ### 1. `api_secrets.py`
 In this file, you need to provide the API keys for AssemblyAI and ListenNotes. Replace `'api_key_1'` and `'api_key_2'` with your actual API keys.
